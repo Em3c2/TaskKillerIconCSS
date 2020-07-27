@@ -1,0 +1,51 @@
+.icon {
+	background-color: #1EE5CF;
+	border-radius: 10%;
+	border: 5px solid #19D5C0;
+	width: 250px;
+	height: 250px;
+	position: relative;
+	margin:auto;
+	display: flex;
+    justify-content: center;
+
+}
+
+.icon:hover {
+	background-color: #1CF0D9;
+}
+
+.icon .hoz {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 45px;
+	left: 55px;
+	border-bottom: 40px solid white;
+	border-left: 10px solid #714A1A;
+	border-bottom-right-radius: 70%;
+	transform: rotate(130deg);
+	transition-duration: 700ms;
+	box-shadow: inset 0px -7px 3px -3px red, -4px 0.5px 0px #402B11 
+}
+
+.icon:active .hoz {
+	transform: rotate(660deg);
+	top:10px;
+	left: 75px;
+	transition-duration: 500ms;
+}
+
+.icon .title {
+	font-family: 'Lobster', cursive;
+	font-size: 40px;
+	align-self: flex-end;
+	padding-bottom: 15px;
+	user-select: none;
+}
+
+.icon:active .title {
+	font-size: 45px;
+	padding-bottom: 5px;
+	transition-duration: 300ms;
+}
